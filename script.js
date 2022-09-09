@@ -18,7 +18,7 @@ sm30.addEventListener('change', () => {
     katta.textContent = sm30.value
 })
 
-let sm35 = document.querySelector('.pitsa35')
+let sm35 = document.querySelector('.sm35')
 sm35.addEventListener('change', () => {
     let katta = document.querySelector('.kattasi')
     katta.textContent = sm35.value
@@ -150,13 +150,9 @@ let formInput = document.querySelector('.sm30')
 let modalText = document.querySelector('.modalText12')
 let formInputs = document.querySelector('.sm35')
 
-if (formInput1.value == "25cm") {
+if (formInput1.checked || formInput.checked || formInputs.checked) {
     modalText.classList.add("modalText");
-  } else if (formInput.value == "30cm") {
-    modalText.classList.add("modalText");
-  } else if (formInputs.value == "35cm") {
-    modalText.classList.add("modalText");
-  }
+}
 
   formInput1.addEventListener("click", () => {
     modalText.classList.add("modalText2");
